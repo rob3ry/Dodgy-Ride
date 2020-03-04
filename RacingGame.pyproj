@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{999210d0-8e6e-4837-83cd-b6606730dd23}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>MSBuild|venv|$(MSBuildProjectFullPath)</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\2x.png" />
+    <Content Include="Assets\2x_blue.png" />
+    <Content Include="Assets\blue_car.png" />
+    <Content Include="Assets\blue_car1.png" />
+    <Content Include="Assets\blue_car_icon.png" />
+    <Content Include="Assets\blue_car_transp.png" />
+    <Content Include="Assets\explosion.wav" />
+    <Content Include="Assets\Glass.wav" />
+    <Content Include="Assets\highscore.txt" />
+    <Content Include="Assets\highway-half.png" />
+    <Content Include="Assets\inv.png" />
+    <Content Include="Assets\inv1.png" />
+    <Content Include="Assets\invisible.png" />
+    <Content Include="Assets\laser_gun.wav" />
+    <Content Include="Assets\Man.mp3" />
+    <Content Include="Assets\missile.png" />
+    <Content Include="Assets\missile_straight.png" />
+    <Content Include="Assets\m_launch.wav" />
+    <Content Include="Assets\power_up.wav" />
+    <Content Include="Assets\red_car.png" />
+    <Content Include="Assets\yellow_car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="venv\">
+      <Id>venv</Id>
+      <Description>venv (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <Version>3.7</Version>
+      <Architecture>X64</Architecture>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
